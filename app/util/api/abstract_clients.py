@@ -100,11 +100,11 @@ class RestClient(Client):
         self.__verify_response(response, error_msg)
         return response
 
-    def put(self, url: str, error_msg: str, body: dict = None, params=None, allow_redirect=False):
+    def put(self, url: str, error_msg: str, body: dict = None, params=None, allow_redirect=False, headers: dict = None):
         body_data = self.to_json(body) if body else None
-        response = self.session.put(url, body_data, params=params, auth=self.base_auth, headers=self.headers,
+        response = self.session.put(url, body_data, params=params, auth=self.base_auth, headers=headers if headers else self.headers,
                                     allow_redirects=allow_redirect, verify=self.verify)
-
+    
         self.__verify_response(response, error_msg)
         return response
 

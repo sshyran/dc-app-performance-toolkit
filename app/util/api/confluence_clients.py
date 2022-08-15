@@ -165,6 +165,18 @@ class ConfluenceRestClient(RestClient):
         groups = [group['name'] for group in response.json()['results']]
         return groups
 
+    def install_cq_license(self, license):
+        api_url = f'{self.host}/rest/plugins/1.0/com.atlassian.confluence.plugins.confluence-questions-key/license'
+        params = {
+            "rawLicense": license
+        }
+        cq_json_header = {
+            "Accept": "application/json",
+            "Content-Type": "application/vnd.atl.plugins+json; charset=utf-8"
+        }
+        response = self.put(api_url, error_msg='Could not install License for Confluence Question', body=params, params=None, allow_redirect=False, headers=cq_json_header)
+        return response.status_code == 200
+
 
 class ConfluenceRpcClient(Client):
 

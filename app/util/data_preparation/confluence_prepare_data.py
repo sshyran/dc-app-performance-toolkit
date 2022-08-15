@@ -1,4 +1,5 @@
 import random
+import os
 from multiprocessing.pool import ThreadPool
 
 import urllib3
@@ -222,6 +223,12 @@ def main():
     __is_collaborative_editing_enabled(rest_client)
     __check_current_language(rest_client)
 
+    print("Installing CQ license")
+    # Using timebomb license for testing pupose 
+    cq_license = os.getenv('bamboo_cq_tesing_license')
+    rest_client.install_cq_license(cq_license)
+
+    print("Preparing data")
     dataset = __create_data_set(rest_client, rpc_client)
     write_test_data_to_files(dataset)
 
