@@ -223,7 +223,7 @@ def main():
     __is_collaborative_editing_enabled(rest_client)
     __check_current_language(rest_client)
 
-    cq_license = os.getenv('bamboo_cq_tesing_license')
+    cq_license = os.getenv('bamboo.cq.tesing.license')
     if cq_license:
         print("Installing CQ license")
         # Using timebomb license for testing pupose 
