@@ -229,9 +229,9 @@ def main():
         # Using timebomb license for testing pupose 
         rest_client.install_cq_license(cq_license)
 
-    # print("Preparing data")
-    # dataset = __create_data_set(rest_client, rpc_client)
-    # write_test_data_to_files(dataset)
+    print("Preparing data")
+    dataset = __create_data_set(rest_client, rpc_client)
+    write_test_data_to_files(dataset)
 
     print("Finished preparing data")
 
