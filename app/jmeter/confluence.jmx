@@ -5929,6 +5929,10 @@ if (response_data.username != vars.get(&quot;username&quot;)) {
                   </HeaderManager>
                   <hashTree/>
                 </hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">300</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
               <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Search keyword" enabled="true">
                 <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -6421,6 +6425,10 @@ if (response_data.username != vars.get(&quot;username&quot;)) {
                   </HeaderManager>
                   <hashTree/>
                 </hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">300</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
               <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Save question" enabled="true">
                 <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -6718,6 +6726,10 @@ if (response_data.username != vars.get(&quot;username&quot;)) {
                   </HeaderManager>
                   <hashTree/>
                 </hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">300</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
               <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Create Answer" enabled="true">
                 <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -6986,6 +6998,10 @@ if (response_data.username != vars.get(&quot;username&quot;)) {
                   </ResponseAssertion>
                   <hashTree/>
                 </hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">300</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing - end" enabled="true">
