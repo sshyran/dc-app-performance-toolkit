@@ -224,16 +224,16 @@ def main():
     __check_current_language(rest_client)
 
     # cq_license = os.getenv('bamboo_cq_tesing_license')
-    cq_license = """AAAB/g0ODAoPeNqdUklv4jAUvudXWJobo0AW2mSQciiJKYyaBEJo1U7nYMIDMk3s4CWFf1+zaTbNZ
-Sz54s/vvW95n55ghe7UBtkesrxB3xm4NrqPc+RYjmO8weERuCgZDexby/Is33VtI1H1Eni6XgiNB
-baljxEyKkkhE1JDsKoUoxtjqnixJQIiIiE4tjMt37Q946EsgArIDw2cvkf4ET+kU5xdEbxvSn44l
-U1txxpfm+OYlNW1e8HqLpEVEaIktFswuq4U0AK6TaU2JRW/PJk7BUJqEaL779lz4C3wSRQMsYfNf
-vTimLfpV8+8d7/4RnUuGxOxDeLQCkezMMt3MpvdNKNn7n5uq7thMVcxpQmv3yeLqHqpZxC7/fbJ6
-/PID+NNnu/248T3X4P/pK4NKFsIJFdgzNVSFLxsjsj5pdPpJGlujtLMnGZptAjzSZqYiznWQBBy0
-Gau0PKA5BbQxQSEacFWwFHD2Q8oJPq2lbJ5HfR6G/Ybv7p30W/CueJ7F0UMUSbRqhSSl0slQXcuB
-ZIMFUpIVuvN6Bo6LyqBEi3kr0w1rzDDdzmOzOHzkeQl1ws5HcSCvlH2To05TgJ9zRu9ZinfEFoKc
-hKO96RuKkAhqxtCD8ZJpgb+XLgIfpqVazvRRQ5aMy3+5DlaQQsVazRtA7ekUucJa1IJMD4A4oQR9
-DAsAhQpxIyxfZd0ue3n+WI3IJJsZw1arwIULQV72RykOzaRT8X/4DHM0CBWBL0=X02o4"""
+    cq_license = """AAACAA0ODAoPeNqdUltzojAUfudXZGbfnAEBragzPFhIq20Vq2C3bvchwhGokNAkoP77jZfO3mZfN
+jN5yZdzznc5X14gQaM6RZaDzP7wpju0B+h+GiLbtG1tB8cVcJEz6lo903TMfqdjabO63AAPtpFQm
+GuZp6N5jEoSyxkpwU2KmtFUm9c8zogAn0hwT/10s69bjvaUx0AFhMcKzt99vMJPwRwvPhF8qHJ+P
+JfNLdscfzbHU5IXn91jVhpEFkSInFAjZnRb1EBjMKqiTnMqfnnSP2oQUqkQxr9nL4E3wCe+e4sdr
+Hf9ta33ggdHv+8M+lpxKRsTkblTz/Tunr3HRyuL3uerVa8XNfbDvvuyXr866ZhF+0kU79YEJ1/j9
+Tijjr+Xz4dBUxajYgC7N/c/qSsD8gZcyWvQlvVGxDyvTsjlpdVqzYJQvwsW+nwR+JEXToKZHi2xA
+lyPgzIzQZsjkhmgqwkI05glwFHF2TvEEn3LpKzehu12yn7jV7av+nW4VHw3kM8QZRIluZA839QSV
+OdcIMlQXAvJSrUahqbyohIoUUL+ylTx8hZ4FGJfv309kbzmeiWngojojrI91ZZ45qqr36g1C3hKa
+C7IWTg+kLIqAHmsrAg9ameZCvhz4Xz4aVao7ERXOWjLlPiz5yiBBgpWKdoabkhRXyZsSSFA+wFDY
+RKaMCwCFAH7A+9E/1MhTWiE90p3bhrXZL6xAhQY3zCNVdxfZZZZCsOsgiZnZVpQjg==X02o8"""
     print("Installing CQ license")
     # Using timebomb license for testing pupose 
     rest_client.install_cq_license(cq_license)
