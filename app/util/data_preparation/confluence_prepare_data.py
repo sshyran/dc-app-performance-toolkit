@@ -224,19 +224,23 @@ def main():
     __check_current_language(rest_client)
 
     # cq_license = os.getenv('bamboo_cq_tesing_license')
-    cq_license = """AAACAA0ODAoPeNqdUltzojAUfudXZGbfnAEBragzPFhIq20Vq2C3bvchwhGokNAkoP77jZfO3mZfN
-jN5yZdzznc5X14gQaM6RZaDzP7wpju0B+h+GiLbtG1tB8cVcJEz6lo903TMfqdjabO63AAPtpFQm
-GuZp6N5jEoSyxkpwU2KmtFUm9c8zogAn0hwT/10s69bjvaUx0AFhMcKzt99vMJPwRwvPhF8qHJ+P
-JfNLdscfzbHU5IXn91jVhpEFkSInFAjZnRb1EBjMKqiTnMqfnnSP2oQUqkQxr9nL4E3wCe+e4sdr
-Hf9ta33ggdHv+8M+lpxKRsTkblTz/Tunr3HRyuL3uerVa8XNfbDvvuyXr866ZhF+0kU79YEJ1/j9
-Tijjr+Xz4dBUxajYgC7N/c/qSsD8gZcyWvQlvVGxDyvTsjlpdVqzYJQvwsW+nwR+JEXToKZHi2xA
-lyPgzIzQZsjkhmgqwkI05glwFHF2TvEEn3LpKzehu12yn7jV7av+nW4VHw3kM8QZRIluZA839QSV
-OdcIMlQXAvJSrUahqbyohIoUUL+ylTx8hZ4FGJfv309kbzmeiWngojojrI91ZZ45qqr36g1C3hKa
-C7IWTg+kLIqAHmsrAg9ameZCvhz4Xz4aVao7ERXOWjLlPiz5yiBBgpWKdoabkhRXyZsSSFA+wFDY
-RKaMCwCFAH7A+9E/1MhTWiE90p3bhrXZL6xAhQY3zCNVdxfZZZZCsOsgiZnZVpQjg==X02o8"""
-    print("Installing CQ license")
-    # Using timebomb license for testing pupose 
-    rest_client.install_cq_license(cq_license)
+    cq_license = """AAACAA0ODAoPeNqdUkuP2jAQvvtXWOqNKiEJLGGRcoDELKwgoRDYbksPJgyQkthZ28mSf1/zUl/qp
+ZZ88eeZ+R7z4QW2uF/use1i2+o92L12Gz9NY+xYjoOOUK9AyJQzz+5Ylmt1Wy0bhWW+ARHtllJjn
+m2dD/I5UzRRIc3B22YlZ3s0K0VyoBICqsA79zOsrmG7aJImwCTEdQGX7wFZkUk0I/M7Qk5FKupL2
+cx2rNG9OZnSNLt3T3huUpVRKVPKzISzXVYCS8AssnKfMvnLk/FWglRahTT/PXsBogIxDrwBcYnRD
+r44Rid6do2n1mMXZdeyEZUHb+q/+8NBPM5h83ichP1RPhp8jDbx/iCc03FZ9Q/zT+6ktrPPqyYrk
+uaz9foCHVpNs2pY9Nfe2vtP7tqBtAJPiRLQotzIRKTFGbm+NBqNMIqNYTQ3ZvMoWPrxOAqN5YJow
+PMFaDe3eFNjdQB8cwETlvAtCFwI/h0Shb8elCrWvWZzz3/jlzdvBhhwrfhm4oBjxhXeplKJdFMq0
+J1TiRXHSSkVz/VumEgHxhQwqoX8Farm5c9JPyaBMXg9k7wFeyOnk1iyI+PvDC1I6OlrPOg9i8Ses
+lTSi3ByonmRAfZ5XlBWo4tMDfy5cQH8NCvWduKbHLzjWvzFc7yFCjJeaNqIVDQrrxN2NJOAfgDqL
+BKyMC0CFE9Dzmh9SI331tWuWuw1PjuDACmIAhUAh3/pI3FoivdNi8UCTHDKI14k42A=X02o8"""
+
+    try:
+        print("Installing CQ license")
+        rest_client.install_cq_license(cq_license)
+    except:
+        print("An exception occurred while install CQ license")
+   
 
     print("Preparing data")
     dataset = __create_data_set(rest_client, rpc_client)
