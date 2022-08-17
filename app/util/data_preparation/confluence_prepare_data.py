@@ -224,10 +224,9 @@ def main():
     __check_current_language(rest_client)
 
     cq_license = os.getenv('bamboo_cq_tesing_license')
-    if cq_license:
-        print("Installing CQ license")
-        # Using timebomb license for testing pupose 
-        rest_client.install_cq_license(cq_license)
+    print("Installing CQ license")
+    # Using timebomb license for testing pupose 
+    rest_client.install_cq_license(cq_license)
 
     print("Preparing data")
     dataset = __create_data_set(rest_client, rpc_client)
