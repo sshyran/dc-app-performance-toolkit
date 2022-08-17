@@ -223,7 +223,17 @@ def main():
     __is_collaborative_editing_enabled(rest_client)
     __check_current_language(rest_client)
 
-    cq_license = os.getenv('bamboo_cq_tesing_license')
+    # cq_license = os.getenv('bamboo_cq_tesing_license')
+    cq_license = """AAACAg0ODAoPeNqdUk2PmzAUvPtXWOotEgRCG5JIHAiwu9luQppAq92mBwce4AZsapts0l9f50v9k
+nqoJR/s8RvPzHtvPkGO/a7Etostd2I7E8fC9/MED6zBAO3g+BGEpJx59tCyXGvkODZadM0WRFykU
+mOebemFMt6YRNVESkqYmXFW1B2wDMy27krK5C9XxrcOpNKccoNNkim6B0+JDlDAmdLnBWnAy+uOs
+xItO5FVREJIFHgnSYY1MmwXPdEMmITk2ML5eRDP59EqmPlPNyg6tFQcz3VLe2A93NijOaH1jX4NY
+g9iFnrTyI2Mt+HLwBjGj65x74xHqL4QPRBZefPACu5CkY3TV4u2xfsdqJDzw/e0sg6yZqVfpf5uy
+Haj5OWxWI2dvpgu6eOH9fO26WfS33ho3W1lJmh7Mn6x+7+R/cN7r9dbxIlxF6+M5SoO0yCZxQsjX
+Uca8AIBOo0cb49YVYCvNDhiGc9B4Fbwr5Ap/LlSqt1M+v2S/yav6V8DMeBS8cXEIceMK5xTqQTdd
+go0M5VYcZx1UvFGz4eJdOBMASPax19N0bqCVeQnUWhMn08ir425itOdSdmO8VeG1tHC09t4p4ctF
+iVhVJJzltGBNG0NOOBNS9gRnW1q4M+RCeFn/olOE1/t4IJr8+fIcQ57qHmrZaNoT+ru8kNBagnoB
+5fPFD0wLAIUfZ1BETofOzXOlgE2e0iLU4PYecYCFDswTj1CLAXMrPbLHIBT57fTeQB5X02o8"""
     print("Installing CQ license")
     # Using timebomb license for testing pupose 
     rest_client.install_cq_license(cq_license)
