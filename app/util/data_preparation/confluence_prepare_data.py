@@ -223,7 +223,7 @@ def main():
     __is_collaborative_editing_enabled(rest_client)
     __check_current_language(rest_client)
 
-    # cq_license = os.getenv('bamboo_cq_tesing_license')
+    # this is a CQ timebomb license for testing purpose. It only valid for few days
     cq_license = """AAAB/w0ODAoPeNqdUkmP2jAUvudXWOqNKpAEOskg5RASM4sGgtimM6UHJ3mAO4kdvDDk34/Z1E291
 JIv/vze+5b36RkKFOkNcn3kdvuu23cCdDeaI8/xPOsNmiUISTkL3RvH8Z2g23Wtsa4yEOl6IQ0Wu
 s7xWDFniuRqTCoIi1JztrEmWuRbIiEhCsJjP9sJbNe3nmgOTMK8qeH0PcFL/JRO8PSK4ENNRXMqm
